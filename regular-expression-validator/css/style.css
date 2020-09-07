@@ -1,0 +1,89 @@
+:root {
+  --mainWhite: #fff;
+  --mainBlack: #000000;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --headerFontSize: 2rem;
+  --buttonBackground: #11999e;
+  --mainTransition: all 0.3s linear;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+}
+
+.container {
+  width: 1172px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: var(--headerFontSize);
+  margin: 20px 0;
+}
+
+.container .choices {
+  padding: 20px;
+}
+
+.container .choices ul {
+  list-style: none;
+  font-size: 18px;
+}
+
+.container .choices ul li {
+  padding: 5px;
+}
+
+.container .choices ul li button {
+  background-color: var(--buttonBackground);
+  padding: 0.5rem 1rem;
+  margin-right: 0.3rem;
+  border: 1px solid var(--buttonBackground);
+  border-radius: 2%;
+  font-size: 18px;
+  color: var(--mainWhite);
+  width: 220px;
+  cursor: pointer;
+  -webkit-transition: var(--mainTransition);
+  transition: var(--mainTransition);
+}
+
+.container .choices ul li button:hover {
+  background-color: transparent;
+  color: var(--mainBlack);
+  border: 1px solid #11999e;
+}
+
+.container .choices ul li button:focus {
+  outline: none;
+}
+
+.container .choices ul li span {
+  -webkit-transition: var(--mainTransition);
+  transition: var(--mainTransition);
+}
+/*# sourceMappingURL=style.css.map */
